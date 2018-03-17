@@ -14,11 +14,11 @@ exports.add_to_app = function(app){
         res.send("Running...");
     });
 
-    app.get("/books", authorize.authenticateRequest, bookstore.findAll);
+    app.get("/books",  bookstore.findAll);
     app.get("/books/:id", bookstore.findById);
     app.get("/search/books",  bookstore.search);
 
-    app.get("/seedData", seed.seedData);
+    app.get("/seedData", authorize.authenticateRequest, seed.seedData);
 
     app.get("/requests", status.getStatus);
 }

@@ -1,0 +1,20 @@
+{
+  "name": "bookstore",
+  "version": "0.0.1",
+  "description": "sample api's",
+  "main": "bookstore.js",
+  "scripts": {
+    "start": "node bookstore.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "bunyan": "^1.8.12",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.6"
+  },
+  "devDependencies": {
+    "faker": "^4.1.0"
+  }
+}

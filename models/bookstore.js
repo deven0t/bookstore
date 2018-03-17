@@ -5,10 +5,9 @@ var bookstoreSchema = new mongoose.Schema({
 	isbn: String,
 	book_title: String,
 	genre: String,
-	author: {
-		name: String,
-		location: String
-	}
+	cover_url: String,
+	is_cover_available: Boolean,
+	authorname: String
 });
 
 module.exports = mongoose.model('bookstore', bookstoreSchema);
